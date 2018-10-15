@@ -1,16 +1,29 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-
+<!-- <meta http-equiv="refresh" content="5;url=/test/index.jsp"> -->
 <title>电子书城</title>
 <link rel="stylesheet" href="css/main.css" type="text/css" />
-</head>
+<script type="text/javascript">
 
+	setInterval(function(){
+		
+			var spanValue = document.getElementById("second");
+			var count = spanValue.innerHTML;
+			count --;
+			if(count >= 0){
+				spanValue.innerHTML = count;
+			}
+	},1000);
+
+</script>
+</head>
 <body class="main">
 
+<%
+	response.setHeader("refresh","5;url="+ request.getContextPath() +"/index.jsp");
+%>
 	<jsp:include page="head.jsp"></jsp:include>
 	<jsp:include page="menu_search.jsp" />
 
@@ -27,7 +40,7 @@
 							</td>
 							<td style="padding-top:30px"><font
 								style="font-weight:bold; color:#FF0000">注册成功</font><br />
-								<br /> <a href="index.jsp"><span id="second">5</span>秒后自动为您转跳回首页</a>
+								<br /><a href="index.jsp"><span id="second">5</span>秒后自动为您转跳回首页</a>
 							</td>
 						</tr>
 					</table>
