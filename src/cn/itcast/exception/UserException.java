@@ -1,5 +1,8 @@
 package cn.itcast.exception;
 
+/**
+ * 自定义异常，继承了Exception类
+ */
 public class UserException extends Exception {
 
 	public UserException() {
