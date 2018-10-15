@@ -15,6 +15,9 @@ import cn.itcast.domain.User;
 import cn.itcast.exception.UserException;
 import cn.itcast.service.UserService;
 
+/**
+ * ×¢²áservlet
+ */
 public class RegisterServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -77,7 +80,7 @@ public class RegisterServlet extends HttpServlet {
 
 			// Ìí¼Ó³É¹¦
 			response.sendRedirect(request.getContextPath()
-					+ "/registsuccess.jsp");
+					+ "/registersuccess.jsp");
 			return;
 
 		} catch (UserException e) {
