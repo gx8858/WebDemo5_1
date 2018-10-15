@@ -3,6 +3,9 @@ package cn.itcast.domain;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * UserBean
+ */
 public class User {
 
 	// id INT PRIMARY KEY AUTO_INCREMENT,
