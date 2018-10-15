@@ -4,7 +4,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-
 <title>bookStore注册页面</title>
 <%--导入css --%>
 <link rel="stylesheet" href="css/main.css" type="text/css" />
