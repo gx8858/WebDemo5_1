@@ -6,6 +6,9 @@ import cn.itcast.dao.UserDaoImpl;
 import cn.itcast.domain.User;
 import cn.itcast.exception.UserException;
 
+/**
+ * UserService
+ */
 public class UserService {
 
 	// ×¢²á²Ù×÷
