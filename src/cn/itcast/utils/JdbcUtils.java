@@ -7,7 +7,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
 
-
+/**
+ * JDBCπ§æﬂ¿‡
+ */
 public class JdbcUtils {
 
 	private static final String DRIVERCLASS;
