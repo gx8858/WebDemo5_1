@@ -8,6 +8,9 @@ import cn.itcast.domain.User;
 import cn.itcast.exception.UserException;
 import cn.itcast.utils.JdbcUtils;
 
+/**
+ * UserDaoImpl实现了UserDao
+ */
 public class UserDaoImpl implements UserDao {
 	// 添加用户
 	public void addUser(User user) throws UserException, ClassNotFoundException, SQLException {
